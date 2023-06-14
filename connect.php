@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost","root","","db");
+$conn = new PDO("sqlsrv:server = tcp:dtdmserver.database.windows.net,1433; Database = db", "3120520033@ued.udn.vn", "dtdm");
 
 // Check connection
 if ($conn->connect_errno) {
