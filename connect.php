@@ -1,9 +1,11 @@
 <?php
-$conn = new PDO("sqlsrv:server = tcp:dtdmserver.database.windows.net,1433; Database = db", "3120520033@ued.udn.vn", "dtdm");
+$localhost = "four.crj5jnssjjr0.us-east-1.rds.amazonaws.com";
+$username = "Four";
+$password = "dtdmnhom4";
+$db = "four";
+$conn = new PDO("mysql:
+              host=$host;dbname=db,charset=utf-8",
+              $username,
+              $password);
 
-// Check connection
-if ($conn->connect_errno) {
-  echo "Thất bại khi kết nối tới database: " . $conn->connect_error;
-  exit();
-}
 ?>
